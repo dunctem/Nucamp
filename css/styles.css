@@ -1,7 +1,7 @@
 /* UTILITY */
 
 body {
-    font-family: "Open Sans", sans-serif
+    font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -11,15 +11,15 @@ h3 {
 }
 
 h2 {
-    color: #3046C5
+    color: #3046C5;
 }
 
 header h2 {
     color: #CEC8FF;
 }
 
-footer {
-    background-image: linear-gradient(#cec8ff, white);
+.site-footer {
+    background-image: linear-gradient(#CEC8FF, white);
     padding: 20px 0;
 }
 
@@ -29,7 +29,7 @@ footer {
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b);
     color: white;
 }
 
@@ -43,18 +43,18 @@ footer {
 /* NAVBAR */
 
 .navbar {
-    background-color: #60106B;
+    background-color: #901CAD;
 }
 
 
 /* CAROUSEL */
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+.carousel {
+    border: solid #5637dd;
 }
 
-.carousel {
-    border: solid #5637DD;
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #carouselButton {
