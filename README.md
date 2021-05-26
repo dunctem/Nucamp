@@ -27,6 +27,10 @@ After the installation process you are now ready to run the testing environment 
 
 It will compile for a second or two and launch the server on http://localhost:3000 and automatically open it on your default browser.
 
+### Build distribution folder
+
+This project comes with an automated deployment build script that will compile, uglify and minify SCSS and JS files and will also format and compress image sizes without loss of quality, otimizing for the fastest load times possible. To use it, just run `npm run build` and a new `dist` directory will be created ready for deployment into any static hosting service.
+
 ---
 ### Useful resources
 **Stackedit.io** - Web based Markdown live editor, useful for creating Github documentation

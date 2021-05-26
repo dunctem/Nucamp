@@ -19,10 +19,10 @@ $(function() {
 
     // MODAL CONTROLS
 
-    $("#reserveButton").click(() => {
+    $("#reserveButton").click(function(){
         $("#reserveModal").modal("show");
     });
-    $("#loginButton").click(() => {
+    $("#loginButton").click(function(){
         $("#loginModal").modal("show");
     });
 
