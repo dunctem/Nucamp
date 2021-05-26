@@ -35,16 +35,65 @@
                 <div class="col text-center">
                     <button class="btn-info btn" type="button" data-toggle="modal" data-target="#reserveModal">Reserve Camp</button>
                 </div>
+                <div class="col text-center">
+                    <button class="btn-primary btn" type="button" data-toggle="modal" data-target="#loginModal">Login</button>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- MODAL -->
+    <!-- MODALS -->
 
     <div id="reserveModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header">
+                    <h3 class="modal-title">Reserve a Campsite</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row">
+                                <label for="numCampers" class="col-sm-6">Number of Campers</label>
+                                <select class="col-sm-6" name="numCampers" id="numCampers">
+                                        <option value="0">Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                            </div>
+                            <div class="form-group row">
+                                <label for="campDate" class="col-sm-6">Date</label>
+                                <input class=" col-sm-6" type="date" name="campDate" id="">
+                            </div>
+                            <div class="form-group row">
+                                <label for="campType" class="col-sm-6">Camping Type</label>
+                                <div class="btn-group col-sm-6" role="group" aria-label="Basic example">
+                                    <button type="button" name="siteTent" class="btn btn-primary">Tent</button>
+                                    <button type="button" name="siteRV" class="btn btn-success">RV</button>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button class="btn-secondary btn">Cancel</button>
+                                    <button class="btn-primary btn">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
                     <h3 class="modal-title">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -236,26 +285,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Custom scripts usually come after 3rd party libraries to be able to use them -->
-
-    <script>
-        $(function() {
-            $(".carousel").carousel({
-                interval: 2000,
-                pause: false
-            });
-            $("#carouselButton").click(function() {
-                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause");
-                }
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
